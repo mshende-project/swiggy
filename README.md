@@ -26,3 +26,5 @@ This repository contains all the learnings and notes I created while learning Re
 1. Clone the repository
 2. Run npm init
 3. Run npm start.
+
+Open link to view project - https://bitecart.netlify.app/
