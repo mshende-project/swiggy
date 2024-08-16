@@ -1,99 +1,28 @@
-# Planning
+#Food-Ordering-App
+This repository contains all the learnings and notes I created while learning React JS.
 
-[comment]: <> (Header)
+#Tech - Stack
+1. Frontend Library: React JS
+2. Styling: Tailwind CSS
+3. Database: Firebase
+4. Bundler: Parcel
+5. Authentication: Firebase-Auth
+6. State Management: Redux Toolkit
 
-[comment]: <> (    Logo)
+#Working of project
+1. We fetch the restaurants of your city from Swiggy API, getting the live data.
+2. Display them with Area name, Cuisines Category and Ratings.
+3. Search Restaurants by Name.
+4. For any restaurant, you can checkout all the different type of dishes available with details and prices per quantity.
+5. Add to cart
+6. Authenticate yourself
+7. Place Order.
 
-[comment]: <> (    Nav items)
+#Improvements to make
+1. Not responsive for Mobile phones
+2. Cart data is not stored anywhere, it should be in local storage for not logged in users to avoid losing on refresh page.
 
-[comment]: <> (Body)
-
-[comment]: <> (    Search)
-
-[comment]: <> (    Restaurant container)
-
-[comment]: <> (    Restaurant card)
-                -img
-                -name of res, start rating, cuisine, delivery time
-
-[comment]: <> (Footer)
-
-[comment]: <> (    Copyright)
-
-[comment]: <> (    Links)
-
-[comment]: <> (    Address)
-
-[comment]: <> (    Contact)
-
-
-# Optimizing app 
-# Chunking
-# code splitting
-# dynamic bundling
-# lazy loading 
-    # creates different bundle like (Grocery.js) to load new component when imported component using lazy loading
-    # wrap component with <Suspense fallback={<>Loading.....</>}><Grocery/></Suspense>
-# on demand loading
-# dynamic import
-
-# Context
-can be used by two ways
-1. by using `const data = useContext(UserContext)` hook
-2. by using component from react context `<UserContext.Consumer>{(data) => console.log(data)}<UserContext.Consumer/>`
-3. Note: context can be used inside other context
-
-# Redux Toolkit
- - install react-redux and @reduxjs/toolkit
- - build our store
- - connect our store to app
- - create slice (cartslice)
- - dispatch(action)
- - selector
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+#How to run on your local
+1. Clone the repository
+2. Run npm init
+3. Run npm start.
