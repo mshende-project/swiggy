@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "../appStore";
 
 export interface User {
-  email: string | null;
+  email: string;
   uid?: string;
   displayName?: any;
   phonenumber?: number;
@@ -12,12 +12,12 @@ export interface User {
 interface AuthState {
   isAuthenticated?: boolean;
   isLoading?: boolean;
-  user?: User;
+  user: User;
 }
 const initialState: AuthState = {
   isAuthenticated: false,
   isLoading: false,
-  user: undefined,
+  user: { email: "", password: "" },
 };
 export const authSlice = createSlice({
   name: "auth",
@@ -36,8 +36,8 @@ export const authSlice = createSlice({
   },
 });
 
-export const userReducer = authSlice.reducer;
+export const authReducer = authSlice.reducer;
 
 export const { setUser, setLoading, signOut } = authSlice.actions;
 
-export const authUser = (state: RootState) => state.auth.user;
+export const authUser = (state: RootState) => state.user;

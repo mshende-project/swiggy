@@ -24,8 +24,9 @@ const cartSlice = createSlice({
       // immer takes new state and old state then calculate difference and updates state
       state.items.push(action.payload);
     },
-    removeItem: (state, action: PayloadAction<CartItem>) => {
-      state.items.pop();
+    removeItem: (state, action: PayloadAction<any>) => {
+      //implement remove item
+      state.items.filter((item) => item !== action.payload);
     },
     // originalState = ["pizza"]
     clearCart: (state) => {

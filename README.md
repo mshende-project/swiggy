@@ -1,3 +1,56 @@
+# Planning
+
+[comment]: <> (Header)
+
+[comment]: <> (    Logo)
+
+[comment]: <> (    Nav items)
+
+[comment]: <> (Body)
+
+[comment]: <> (    Search)
+
+[comment]: <> (    Restaurant container)
+
+[comment]: <> (    Restaurant card)
+                -img
+                -name of res, start rating, cuisine, delivery time
+
+[comment]: <> (Footer)
+
+[comment]: <> (    Copyright)
+
+[comment]: <> (    Links)
+
+[comment]: <> (    Address)
+
+[comment]: <> (    Contact)
+
+
+# Optimizing app 
+# Chunking
+# code splitting
+# dynamic bundling
+# lazy loading 
+    # creates different bundle like (Grocery.js) to load new component when imported component using lazy loading
+    # wrap component with <Suspense fallback={<>Loading.....</>}><Grocery/></Suspense>
+# on demand loading
+# dynamic import
+
+# Context
+can be used by two ways
+1. by using `const data = useContext(UserContext)` hook
+2. by using component from react context `<UserContext.Consumer>{(data) => console.log(data)}<UserContext.Consumer/>`
+3. Note: context can be used inside other context
+
+# Redux Toolkit
+ - install react-redux and @reduxjs/toolkit
+ - build our store
+ - connect our store to app
+ - create slice (cartslice)
+ - dispatch(action)
+ - selector
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
